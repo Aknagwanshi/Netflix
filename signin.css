@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#navbar .logo {
+    width: 150px;
+    margin: 5vh 0 0 12vw;
+    position: relative;
+    z-index: 10;
+}
+
+.main .darkness {
+    position: absolute;
+    background-color: black;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.box {
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.634) ;
+    max-width: 35vw;
+    margin: auto;
+    border-radius: 6px;
+    margin-top: 2%;
+}
+
+.container {
+    display: flex;
+    z-index: 10;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    color: white;
+    max-width: 70%;
+    margin: 50px auto;
+    gap: 15px;
+}
+
+.container>h1 {
+    font-size: 36px;
+    position: relative;
+    z-index: 10;
+}
+
+.container .input-btn {
+    padding: 14px 14px;
+    background-color: #111111;
+    border-radius: 6px;
+    font-size: 15px;
+    color: aliceblue;
+    border: 0.2px solid rgba(255, 255, 255, 0.466);
+}
+
+.container .input-btn:focus{
+    border:1px solid white;
+}
+
+.btn-signin {
+    background-color: #E50914;
+    color: white;
+    padding: 9px 0px;
+    border-radius: 6px;
+    border:none;
+    cursor: pointer;
+}
+
+.btn-signin:hover{
+    background-color: rgb(197, 2, 2);
+}
+
+.container .forget-password {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+.container .forget-password a{
+    cursor: pointer;
+}
+
+.container .links {
+    text-decoration: none;
+    color: white;
+}
+
+.container .links:hover {
+    text-decoration: underline;
+}
+
+.container .check-box-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.check-box-container .check-box {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.sign-up-now a {
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.sign-up-now span{
+    color: rgba(245, 245, 245, 0.644);
+}
+
+.container .condition {
+    font-size: 14px;
+    margin-bottom: 25%;
+}
+.condition span{
+    color: rgba(245, 245, 245, 0.644);
+    font-size: 12.5px;
+}
+.container .condition a {
+    font-weight: 500;
+    font-size: small;
+    text-decoration: none;
+    color: #004cff;
+}
+
+footer{
+    background-color:rgba(0, 0, 0, 0.634);
+    margin-top: 4.5%;
+}
+footer > section{
+    max-width: 75vw;
+    margin:auto;
+    position: relative;
+    z-index: 100;
+    padding: 6% 0%;
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+.query-number span{
+    color: rgba(245, 245, 245, 0.644);
+    font-size: 14px;
+}
+.query-number a{
+    color: rgba(245, 245, 245, 0.644);
+    text-decoration: none;
+}
+.query-number a:hover{
+     text-decoration: underline;
+}
+
+footer > section .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+footer > section .grid li {
+    list-style: none;
+}
+
+footer > section .grid li a{
+    color:rgba(255, 255, 255, 0.705);
+    font-size: small;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #191818;
+    border-radius: 4px;
+    padding: 3px 14px;
+    font-weight: bold;
+    border: 0.5px solid whitesmoke;
+    cursor: pointer;
+    max-width: 105px;
+    margin-bottom: 2%;
+
+}
+.btn:hover{
+    border:2px solid white;
+}
+.btn img{
+    width:17px;
+    filter: invert(100%);
+}
+.btn select{
+    outline: none;
+    border:none;
+    background-color: #191818;
+    color:white
+
+}
+@media screen and (max-width:1100px) {
+    .box{
+        max-width: 50vw;
+    }
+}
+@media screen and (max-width:700px) {
+    .box{
+        max-width: 70vw;
+    }
+    footer > section .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:500px) {
+    .box{
+        max-width: 90vw;
+    }
+}

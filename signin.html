@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <div class="main">
+        <nav id="navbar">
+            <img class="logo" src="assets/images/logo.svg" alt="#">
+        </nav>
+        <div class="darkness"></div>
+        <section class="box">
+            <div class="container">
+                <h1>Sign In</h1>
+                <input b class="input-btn" type="text" placeholder="Email or phone number">
+                <input class="input-btn" type="text" placeholder="Password">
+                <button class="btn-signin">Sign In</button>
+                <a class="forget-password links" href="forgot.html">Forgot Password?</a>
+                <div class="check-box-container">
+                    <input class="check-box" type="checkbox" name="rem-me" id="rem-me">
+                    <span>Remember me</span>
+                </div>
+                <div class="sign-up-now">
+                    <span>New to Netflix?</span>
+                    <a class="links" id="sign-up-now-btn" href="#">Sign up now.</a>
+                </div>
+                <div class="condition">
+                    <span>This page is protected by Google reCAPTCHA to ensure you're not a bot.</span><a class="links"
+                        href="#">Learn
+                        more.</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <section>
+                <div class="query-number">
+                    <span>Questions? Call</span>
+                    <a href="#">000-800-919-1694</a>
+                </div>
+                <div class="grid">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies Preferences</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </div>
+                <button class="btn" id="lang-button">
+                    <img src="assets/images/translate.png" alt="SVG LANG">
+                    <select name="btn-selecto" id="btn-selector">
+                        <option value="english">English</option>
+                        <option value="hindi">हिन्दी</option>
+                    </select>
+                </button>
+            </section>
+        </footer>
+    </div>
+    <script src="signin.js"></script>
+</body>
+
+</html>
