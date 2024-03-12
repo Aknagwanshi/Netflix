@@ -2,10 +2,22 @@
 //     console.log("OOps body is also clicked by you!")
 // })
 
-let changeable=document.querySelector(".change-able")
-document.querySelector(".number-option").addEventListener("click",(e)=>{
-    e.stopPropagation()
-    console.log("Radio invoked")
-    changeable.firstElementChild.innerText="We will text you a verification code to reset your password. Message and data rates may apply."
-   
-})
+let email=document.querySelector("#email")
+let number=document.querySelector("#number")
+let changeable_1=document.querySelector(".change-able")
+let changeable_2=document.querySelector(".change-able2")
+    
+email.addEventListener("change", () => {
+    changeable_1.style.display = 'flex';
+    changeable_2.style.display = 'none';
+});
+
+number.addEventListener("change", () => {
+    changeable_1.style.display = 'none';
+    changeable_2.style.display = 'flex';
+});
+
+let india_icon=document.querySelector(".image-stack").firstElementChild
+let america_icon=document.querySelector(".image-stack").lastElementChild
+
+

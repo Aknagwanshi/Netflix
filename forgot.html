@@ -29,15 +29,36 @@
                 <label for="number">Text Message (SMS)</label>
             </div>
 
+            <!-- Changable-1 is here -->
             <div class="change-able">
                 <p>We will send you an email with instructions on how to reset your password.</p>
                 <input type="email" placeholder="name@example.com">
                 <button>Email Me</button>
             </div>
 
+            <!-- Changable-2 is here -->
+            <div class="change-able2 ">
+                <p>We will text you a verification code to reset your password. Message and data rates may apply.</p>
+                <div class="input-box ">
+                    <div class="code-box ">
+                        <div class="image-stack ">
+                            <img src="assets/images/india-flag-icon.svg" alt="#">
+                            <img src="assets/images/united-states-flag-icon.svg" alt="#">
+                        </div>
+                        <select name="country-code" id="country-code" class="country-code ">
+                            <option value="1">+91</option>
+                            <option value="2">+1</option>
+                        </select>
+                    </div>
+                    <input type="tel">
+                </div>
+                <button>Text Me</button>
+            </div>
+
             <a class="remember-link" href="#">I can't remember my email address or phone number.</a>
             <div class="information">
-                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#"> Learn more.</a></p>
+                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#"> Learn more.</a>
+                </p>
             </div>
         </form>
     </section>
