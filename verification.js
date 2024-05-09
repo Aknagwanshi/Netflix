@@ -1,5 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"; 
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyC5G3bPfGk9zTDD-DAUoGhvcMMy7llH1KQ",
     authDomain: "netflix-50336.firebaseapp.com",
@@ -13,25 +15,30 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const submit = document.getElementById('submit');
 
-submit.addEventListener("click", (event) => {
+
+const passwordBtn = document.getElementById('verify-password');
+const urlParams = new URLSearchParams(window.location.search);
+const email = urlParams.get('email');
+console.log(email)
+document.querySelector('#dynamic-email').innerText=email;
+
+passwordBtn.addEventListener("click", (event) => {
     event.preventDefault();
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    // alert("creating account...")
 
-    signInWithEmailAndPassword(auth, email, password)
+    const password = document.getElementById("password").value;
+    createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
-            alert("Signing In...")
-            window.location.href = "main.html"
+            window.location.href = "signin.html"
             // ...
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            alert(errorMessage)
+            console.log(errorMessage)
             // ..
         });
 })

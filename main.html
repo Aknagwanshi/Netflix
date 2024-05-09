@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Nerflix | Home</title>
+</head>
+
+<body>
+    <div class="main">
+        <nav id="navbar">
+            <img id="logo" src="assets/images/logo.svg" alt="">
+            <ul>
+                <li>Home</li>
+                <li>TV Shows</li>
+                <li>Movies</li>
+                <li>New & Popular</li>
+                <li>My List</li>
+                <!-- <li>Browse By Languages</li> -->
+            </ul>
+        </nav>
+        <div class="about-content">
+            <h3 id="edit-h3">#1 in TV Shows Today</h3>
+            <p id="edit-p">Determined to protect one patient who escaped a mysterious cult, a psychiatrist takes the girl in,
+                putting her own family - and life - in danger.</p>
+            <div class="play-n-more">
+                <button id="play" ><img src="assets/images/play.svg" alt="">Play</button>
+                <button id="info"><img src="assets/images/info.svg" alt="">More Info</button>
+            </div>
+        </div>
+        <iframe id="trailer-video" src="https://www.youtube.com/embed/lEvDTWZZxdc?si=t-RDQasI15g1EHwP" frameborder="0"  allowfullscreen></iframe>
+    </div>
+    <div id="line"></div>
+
+    <div class="popular-movies">
+        <h2>Popular in Netflix</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="popular-movies"></div>
+        </div>
+    </div>
+
+    <div class="trending-shows">
+        <h2>Trending Shows</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="trending-shows"></div>
+        </div>
+    </div>
+
+    <div class="tv-shows">
+        <h2>TV Shows</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="tv-shows"></div>
+        </div>
+    </div>
+
+    <div class="cartoon-shows">
+        <h2>Cartoon Shows</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="cartoon-shows"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

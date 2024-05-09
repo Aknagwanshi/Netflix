@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signin.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script type="module" src="signin.js" defer></script>
     <title>Netflix</title>
 </head>
 
@@ -18,9 +19,9 @@
         <section class="box">
             <div class="container">
                 <h1>Sign In</h1>
-                <input b class="input-btn" type="text" placeholder="Email or phone number">
-                <input class="input-btn" type="text" placeholder="Password">
-                <button class="btn-signin">Sign In</button>
+                <input class="input-btn" id="email" type="text" placeholder="Email or phone number">
+                <input class="input-btn" id="password" type="text" placeholder="Password">
+                <button class="btn-signin" id="submit">Sign In</button>
                 <a class="forget-password links" href="forgot.html">Forgot Password?</a>
                 <div class="check-box-container">
                     <input class="check-box" type="checkbox" name="rem-me" id="rem-me">
@@ -61,7 +62,6 @@
             </section>
         </footer>
     </div>
-    <script src="signin.js"></script>
 </body>
 
 </html>

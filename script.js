@@ -38,8 +38,24 @@ document.querySelector(".mini-box").addEventListener("click", function (e) {
     }
 })
 
+const validateEmail = (email) => {
+    var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return pattern.test(email);
+}
 
+const emailBtn = document.getElementById('verify-email');
+let email = null;
+emailBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    email = document.getElementById("email").value;
+    if (validateEmail(email)) {
+        console.log(`Your email is ${email}`)
+        window.location.href = "verification.html?email=" + encodeURIComponent(email);
+    }
+    else {
+        alert("Email is invalid")
+    }
 
-
+})
 
 

@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0F0F0F;
+}
+.navbar{
+    padding: 18px;
+}
+.navbar img{
+    width: 115px;
+}

@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, sans-serif;
+
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+}
+
+nav {
+    display: flex;
+    padding: 15px;
+}
+
+nav img {
+    width: 115px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 15px;
+    margin: auto 22px;
+}
+
+nav ul li {
+    font-size: 19px;
+    font-weight: 600;
+    /* display: none; */
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    font-size: 21px;
+    transition: all 0.2s ease-out 0.1s;
+    color: aliceblue;
+    font-weight: 900;
+}
+
+
+.main {
+    background-image: url(assets/images/one_piece.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 85vh;
+    position: relative;
+    /* border: 3px solid green; */
+
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: calc(100% - 180px);
+    gap: 18px;
+    justify-content: center;
+    /* border: 1px solid pink; */
+    padding: 22px;
+}
+
+.about-content p {
+    font-size: 17px;
+}
+
+.about-content h3 {
+    font-size: 27px;
+}
+
+.play-n-more {
+    display: flex;
+    gap: 20px;
+}
+
+.play-n-more button {
+    width: 120px;
+    padding: 4px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.play-n-more button img {
+    height: 32px;
+
+}
+
+#info {
+
+    background-color: rgb(78, 76, 76);
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+#info:focus {
+    background-color: rgb(46, 47, 49);
+    border: 1px solid black;
+}
+
+#info>img {
+    filter: invert(1);
+}
+
+#play {
+    color: black;
+    display: flex;
+    border: none;
+    align-items: center;
+}
+
+#play:focus {
+    background-color: rgb(200, 214, 227);
+    border: 1px solid black;
+}
+
+.popular-movies {
+    max-width: 95vw;
+    margin: auto;
+}
+
+#line {
+    border: 3px solid white;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* Hide the scrollbar */
+    padding-bottom: 20px;
+    /* to ensure the scrollbar doesn't cover any content */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+    /* Hide the scrollbar for WebKit */
+}
+
+.carousel img {
+    width: 200px;
+    /* Adjust image width as needed */
+    height: auto;
+    padding-top: 5px;
+    margin-right: 12px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    /* Smoother transition */
+
+    /* Add some space between posters */
+}
+
+.carousel img:hover {
+    border-radius: 8px;
+    transform: scale(1.10);
+    /* Zoom out effect on hover */
+
+}
+
+.trending-shows {
+    max-width: 95vw;
+    margin: auto;
+}
+
+.tv-shows {
+    max-width: 95vw;
+    margin: auto;
+}
+
+h2 {
+    font-size: 35px;
+    padding: 8px;
+}
+
+.cartoon-shows {
+    max-width: 95vw;
+    margin: auto;
+}
+
+#trailer-video {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    display: none;
+    height: calc(800% / 9.5);
+    width: calc(800% / 16);
+    border-radius: 8px;
+    box-shadow: 3px 3px 9px yellow;
+}
+
+
+@media screen and (max-width:1280px) {
+    .about-content p {
+        font-size: 15px;
+    }
+
+    .about-content h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    nav ul li {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    nav ul li:hover {
+        cursor: pointer;
+        font-size: 18px;
+        transition: all 0.2s ease-out 0.1s;
+        color: aliceblue;
+        font-weight: 700;
+    }
+
+    .about-content {
+        width: 55vw;
+    }
+
+    .about-content p {
+        font-size: 12px;
+    }
+
+    .about-content h3 {
+        font-size: 20px;
+    }
+
+    #trailer-video {
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .main {
+        height: 55vh;
+    }
+
+    nav ul li {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    nav ul li:hover {
+        cursor: pointer;
+        font-size: 12px;
+        transition: all 0.2s ease-out 0.1s;
+        color: aliceblue;
+        font-weight: 500;
+    }
+
+    nav ul li:focus {
+        color: rgb(163, 208, 225);
+    }
+
+    .about-content {
+        height: 50vh;
+        width: 78vw;
+    }
+
+    .play-n-more button {
+        width: 100px;
+        padding: 3px;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+
+    .play-n-more button img {
+        height: 25px;
+
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .carousel img {
+        height: 180px;
+    }
+
+    #line {
+        border: 2px solid white;
+    }
+
+    nav img {
+        width: 90px;
+    }
+
+    #trailer-video {
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+
+    }
+}

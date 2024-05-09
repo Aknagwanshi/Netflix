@@ -191,6 +191,31 @@ nav>img {
     gap: 6px;
 }
 
+
+
+
+
+
+
+.search-bar div {
+    position: relative;
+}
+
+.search-bar div p {
+    position: absolute;
+    font-size: 19px;
+    font-weight: 500;
+    top: 105%;
+    left: 4%;
+    color: rgb(247, 0, 0);
+    display: none;
+}
+
+
+
+
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -481,6 +506,12 @@ footer>.btn {
 
     .btn-red {
         padding: 10px 18px;
+    }
+
+    .search-bar div p {
+        font-size: 16px;
+        top: -40%;
+        left: 4%;
     }
 
     footer>.grid {
