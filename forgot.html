@@ -34,8 +34,8 @@
             <!-- Changable-1 is here -->
             <div class="change-able">
                 <p>We will send you an email with instructions on how to reset your password.</p>
-                <input type="email" placeholder="name@example.com">
-                <button>Email Me</button>
+                <input id="email" type="email" placeholder="name@example.com">
+                <button id="email-btn">Email Me</button>
             </div>
 
             <!-- Changable-2 is here -->
@@ -44,12 +44,11 @@
                 <div class="input-box ">
                     <div class="code-box ">
                         <div class="image-stack ">
-                            <img src="assets/images/india-flag-icon.svg" alt="#">
                             <img src="assets/images/united-states-flag-icon.svg" alt="#">
+                            <img src="assets/images/india-flag-icon.svg" alt="#">
                         </div>
                         <select name="country-code" id="country-code" class="country-code ">
                             <option value="1">+91</option>
-                            <option value="2">+1</option>
                         </select>
                     </div>
                     <input type="tel">
@@ -82,7 +81,7 @@
             </select>
         </div>
     </footer>
-    <script src="forgot.js"></script>
+    <script src="forgot.js" type="module"></script>
 </body>
 
 </html>

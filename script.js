@@ -50,10 +50,12 @@ emailBtn.addEventListener("click", (event) => {
     email = document.getElementById("email").value;
     if (validateEmail(email)) {
         console.log(`Your email is ${email}`)
+        document.querySelector('#invalid-email').style.display='none';
         window.location.href = "verification.html?email=" + encodeURIComponent(email);
     }
     else {
-        alert("Email is invalid")
+        console.log("Email is invalid")
+        document.querySelector('#invalid-email').style.display='flex';
     }
 
 })

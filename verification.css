@@ -68,12 +68,6 @@ form input {
     font-size: 18px;
 }
 
-form a{
-    text-decoration: none;
-    color: #0071EB;
-    font-size: 19px;
-}
-
 form button {
    
     height: 55px;
@@ -82,6 +76,16 @@ form button {
     border-radius: 4px;
     border: none;
     color: white;
+}
+
+form button:hover{
+    background-color: #cd232b;
+    border: 1px solid black;
+}
+
+#invalid-reason{
+    color: #F6121D;
+    font-weight: 500;
 }
 
 footer {

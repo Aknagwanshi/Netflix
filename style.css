@@ -203,11 +203,11 @@ nav>img {
 
 .search-bar div p {
     position: absolute;
-    font-size: 19px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 300;
     top: 105%;
     left: 4%;
-    color: rgb(247, 0, 0);
+    color: #FF0000;
     display: none;
 }
 
@@ -509,7 +509,7 @@ footer>.btn {
     }
 
     .search-bar div p {
-        font-size: 16px;
+        font-size: 12px;
         top: -40%;
         left: 4%;
     }
