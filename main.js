@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Your TMDb API key
-    var apiKey = '5f95077623db2b23f7b41f7361c02021';
+    var apiKey = 'Enter Youe API Key';
     var MAIN_URL = 'https://api.themoviedb.org/3/'
 
 
